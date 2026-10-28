@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Diego Ochoa, Senior Product Manager in broadcast and streaming media. ITVX, NOW (Sky), Arqiva, BFBS.">
+<meta property="og:title" content="Diego Ochoa">
+<meta property="og:description" content="Senior Product Manager · Media Expert · Multilingual">
+<meta property="og:image" content="images/diego.webp">
+<title>Diego Ochoa Portfolio</title>
+<style>
+/* Layout: full-bleed hero still, then alternating white and black bands, like a film programme. Single deliberate look. */
+:root {
+  --ink: #0d0d0e;
+  --paper: #ffffff;
+  --mist: #f2f2f0;
+  --grey: #6b6b70;
+  --line: #e2e2e0;
+  --accent: #0b3df5;
+  --display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.55; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.inner { max-width: 1280px; margin: 0 auto; }
+.label { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.display { font-family: var(--display); font-weight: 700; text-transform: uppercase; line-height: .9; letter-spacing: -.035em; text-wrap: balance; margin: 0; }
+
+/* Stills: generated placeholders until real photos arrive */
+.still { position: relative; overflow: hidden; background: var(--ink); }
+.still::after { content: ""; position: absolute; inset: 0; opacity: .22; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.s1 { background: radial-gradient(120% 90% at 70% 30%, #f3b26b 0%, #c4572e 28%, #3a1410 62%, #0b0606 100%); }
+.s2 { background: linear-gradient(180deg, #9fc3d6 0%, #3d6f8c 45%, #0f2433 46%, #07131b 100%); }
+.s3 { background: radial-gradient(80% 70% at 30% 60%, #e9e3d2 0%, #8c8a7c 35%, #2b2b27 75%); }
+.s4 { background: conic-gradient(from 210deg at 60% 55%, #1b1b1f, #d23b3b, #f1c3a5, #1b1b1f 70%); }
+.s5 { background: linear-gradient(115deg, #0e1a12 0%, #2f5b3b 40%, #c9d6a3 70%, #f6f0d8 100%); }
+.s7 { background: radial-gradient(90% 90% at 50% 40%, #ff5fa2 0%, #c2185b 45%, #3a0718 100%); }
+.s9 { background: #d8e639; }
+.still video.shot { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; max-width: 100%; object-fit: contain; }
+.still img.shot { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; max-width: 100%; object-fit: contain; padding: 5%; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.still img.shot.cover { object-fit: cover; padding: 0; }
+.proj:hover .still img.shot { transform: scale(1.03); }
+.s8 { background: #eb2553; }
+.s6 { background: radial-gradient(100% 100% at 50% 0%, #6a7cff 0%, #2a2f7a 40%, #0a0b1c 100%); }
+
+/* Nav */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--ink); }
+nav.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: var(--ink); color: var(--paper); }
+nav.top .inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 56px; }
+.logo { white-space: nowrap; font-family: var(--display); font-weight: 900; font-stretch: 100%; font-size: 20px; letter-spacing: .02em; text-decoration: none; text-transform: uppercase; }
+.logo span { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--paper); margin-right: 3px; }
+nav.top ul { list-style: none; display: flex; gap: 24px; margin: 0; padding: 0; }
+nav.top ul a { font-size: 14px; font-weight: 500; text-decoration: none; opacity: .75; }
+nav.top ul a:hover { opacity: 1; }
+@media (max-width: 640px) { nav.top ul { gap: 14px; } nav.top ul li.hide-sm { display: none; } }
+
+/* Hero */
+.hero { position: relative; color: var(--paper); min-height: min(86vh, 820px); display: flex; align-items: flex-end; }
+.hero .still { position: absolute; inset: 0; }
+.hero .still::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,.7) 100%), linear-gradient(90deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 60%); }
+.hero-img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: 100%; object-fit: cover; object-position: 70% 35%; }
+.hero .inner { position: relative; z-index: 2; width: 100%; padding-block: 56px 48px; display: grid; gap: 22px; }
+.hero h1 { font-size: clamp(64px, 15vw, 220px); }
+.hero .meta { display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: baseline; justify-content: space-between; }
+.hero p { margin: 0; max-width: 52ch; font-size: clamp(17px, 2vw, 21px); }
+.btn { display: inline-block; font-weight: 600; font-size: 15px; text-decoration: none; padding: 13px 22px; border-radius: 2px; background: var(--paper); color: var(--ink); }
+.btn.dark { background: var(--ink); color: var(--paper); }
+.caption { position: absolute; z-index: 2; top: 20px; right: max(16px, env(safe-area-inset-right, 0px)); color: rgba(255,255,255,.8); }
+
+/* Sections */
+section { padding-block: clamp(64px, 10vw, 128px); }
+.sec-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; border-bottom: 2px solid currentColor; padding-bottom: 14px; margin-bottom: 40px; }
+.sec-head h2 { font-size: clamp(40px, 7vw, 88px); }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(32px, 6vw, 96px); }
+.about-grid > * { min-width: 0; }
+.statement { font-family: var(--display); font-stretch: 90%; font-weight: 700; font-size: clamp(26px, 3.4vw, 44px); line-height: 1.1; margin: 0; text-wrap: balance; }
+.facts { display: grid; gap: 0; margin: 0; }
+.facts div { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding-block: 14px; border-top: 1px solid var(--line); }
+.facts dt { color: var(--grey); }
+.facts dd { margin: 0; font-weight: 500; }
+@media (max-width: 800px) { .about-grid { grid-template-columns: 1fr; } }
+
+/* Projects */
+.dark-band { background: var(--ink); color: var(--paper); }
+.projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 24px; }
+.proj { text-decoration: none; display: grid; gap: 14px; min-width: 0; }
+.proj .still { aspect-ratio: 16 / 10; max-width: 100%; }
+.proj .still > div { position: absolute; inset: 0; transition: transform .6s cubic-bezier(.2,.7,.2,1); background: inherit; }
+.proj:hover .still > div { transform: scale(1.04); }
+.proj h3 { font-family: var(--display); font-stretch: 80%; font-weight: 800; text-transform: uppercase; font-size: 26px; line-height: 1; margin: 0; }
+.proj p { margin: 0; color: rgba(255,255,255,.65); font-size: 15px; }
+.proj .credit { color: rgba(255,255,255,.55); }
+.proj.feature { grid-column: span 2; }
+.proj.feature .still { aspect-ratio: 16 / 9; }
+.proj.feature h3 { font-size: clamp(30px, 4vw, 48px); }
+@media (max-width: 900px) { .projects { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .projects { grid-template-columns: 1fr; } .proj.feature { grid-column: auto; } }
+
+/* Experience */
+.cv { list-style: none; margin: 0; padding: 0; }
+.cv li { display: grid; grid-template-columns: 160px 1fr 1.2fr; gap: 8px 32px; padding-block: 22px; border-top: 1px solid var(--line); align-items: baseline; }
+.cv li:last-child { border-bottom: 1px solid var(--line); }
+.cv .years { font-family: var(--mono); font-size: 13px; color: var(--grey); font-variant-numeric: tabular-nums; }
+.cv h3 { margin: 0; font-family: var(--display); font-stretch: 85%; font-weight: 800; font-size: 22px; text-transform: uppercase; line-height: 1.05; }
+.cv h3 small { display: block; font-family: var(--body); font-stretch: 100%; text-transform: none; font-weight: 500; font-size: 15px; color: var(--grey); margin-top: 4px; }
+.cv p { margin: 0; color: #3b3b40; max-width: 60ch; }
+@media (max-width: 760px) { .cv li { grid-template-columns: 1fr; } }
+
+/* Notebook */
+.mist { background: var(--mist); }
+.notebook { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; }
+.notebook > * { min-width: 0; }
+.lead { text-decoration: none; display: grid; gap: 16px; }
+.lead .still { aspect-ratio: 4 / 3; max-width: 100%; }
+.lead h3 { font-family: var(--display); font-stretch: 80%; font-weight: 900; text-transform: uppercase; font-size: clamp(30px, 4vw, 52px); line-height: .95; margin: 0; text-wrap: balance; }
+.posts { list-style: none; margin: 0; padding: 0; display: grid; }
+.posts li { border-top: 1px solid #d6d6d2; }
+.posts a { display: grid; grid-template-columns: 96px 1fr; gap: 16px; padding-block: 18px; text-decoration: none; align-items: start; }
+.posts .still { aspect-ratio: 1; }
+.posts h4 { margin: 4px 0 6px; font-size: 18px; line-height: 1.25; font-weight: 600; }
+.posts p { margin: 0; color: var(--grey); font-size: 14px; }
+.lead:hover h3, .posts a:hover h4 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+@media (max-width: 860px) { .notebook { grid-template-columns: 1fr; } }
+
+/* Contact */
+.contact h2 { font-size: clamp(56px, 13vw, 200px); }
+.contact-row { display: flex; flex-wrap: wrap; gap: 24px 48px; justify-content: space-between; align-items: end; margin-top: 40px; }
+.email { font-family: var(--display); font-stretch: 100%; font-weight: 700; font-size: clamp(22px, 3.4vw, 40px); word-break: break-all; user-select: all; }
+.emails { display: grid; gap: 28px; }
+.copy { font: 600 14px var(--body); background: var(--paper); color: var(--ink); border: 0; border-radius: 2px; padding: 12px 18px; cursor: pointer; margin-top: 14px; }
+.socials { list-style: none; display: flex; flex-wrap: wrap; gap: 12px 28px; margin: 0; padding: 0; }
+.socials a { font-weight: 500; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.4); padding-bottom: 2px; }
+footer { padding-block: 28px; border-top: 1px solid rgba(255,255,255,.15); color: rgba(255,255,255,.55); }
+footer .inner { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<nav class="top wrap" aria-label="Main">
+  <div class="inner">
+    <a class="logo" href="#top"><span></span><span></span><span></span> Diego Ochoa</a>
+    <ul>
+      <li class="hide-sm"><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li class="hide-sm"><a href="#experience">Experience</a></li>
+      <li><a href="#notebook">Notebook</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero wrap" id="top">
+  <div class="still"><img class="hero-img" src="images/diego.webp" alt="Diego Ochoa in a cap and sunglasses under trees, with the sun low behind him"></div>
+  <div class="inner">
+    <span class="label">Senior Product Manager · Media Expert · Multilingual</span>
+    <h1 class="display">Diego<br>Ochoa</h1>
+    <div class="meta">
+      <p>Nineteen years in broadcast and streaming media. Building streaming platforms, capabilities and experiences for ITVX, NOW (Sky), Arqiva and BFBS.</p>
+      <a class="btn" href="#work">See selected work</a>
+    </div>
+  </div>
+</header>
+
+<section class="wrap" id="about">
+  <div class="inner">
+    <div class="sec-head"><h2 class="display">About</h2><span class="label">Profile</span></div>
+    <div class="about-grid">
+      <div style="display:grid;gap:24px">
+        <p class="statement">In a world where content is king, I am the kingmaker. For me the experience of storytelling deserves to reach people, where they are, on time and at scale, from the biggest live events to the smallest FAST channel.</p>
+        <p style="margin:0;max-width:60ch;color:#3b3b40">I started in programme planning at Discovery and NBCUniversal, trained as a director at the London MET Film School, and moved into product. Today I own streaming infrastructure, metadata and vendor partnerships, working side by side with engineers and using data to decide what to build next.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Based in</dt><dd>London, United Kingdom</dd></div>
+        <div><dt>Focus</dt><dd>Streaming delivery, data and metadata platforms, vendor partnerships</dd></div>
+        <div><dt>Partners</dt><dd>YoSpace, Amagi, Gracenote, Mediakind, AWS, Ateme</dd></div>
+        <div><dt>Analytics</dt><dd>Amplitude, NPAW, GA4, BigQuery, Tableau, Power BI</dd></div>
+        <div><dt>Languages</dt><dd>Spanish, English, French, learning Polish</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="wrap dark-band" id="work">
+  <div class="inner">
+    <div class="sec-head"><h2 class="display">Selected work</h2><span class="label">Projects</span></div>
+    <div class="projects">
+      <a class="proj feature" href="#work">
+        <div class="still s2" style="aspect-ratio:2/1"><div></div><img class="shot cover" src="images/itvx.webp" alt="ITVX Live page showing 24/7 FAST channels"></div>
+        <span class="label credit">ITV · 2022–2024 · Live and on-demand</span>
+        <h3>The UK's first PSB FAST channels</h3>
+        <p>Led the live experience on ITVX: ITV channels, a new TV guide and 20 free ad-supported channels with dynamic ad replacement, built with Amagi and YoSpace. Over one million monthly active users within a year.</p>
+      </a>
+      <a class="proj" href="#work">
+        <div class="still s3"><div></div><img class="shot cover" src="images/gracenote.webp" alt="Streaming catalogue screens powered by Gracenote metadata"></div>
+        <span class="label credit">NOW · Sky · 2021–2022 · Data platform</span>
+        <h3>Global Metadata Platform</h3>
+        <p>Replaced the metadata platform behind NOW, WOW and Sky Group with Gracenote, field by field, across three markets.</p>
+      </a>
+      <a class="proj" href="#work">
+        <div class="still s6"><div></div><img class="shot cover" src="images/itvx-search.webp" alt="Google search for what's on ITV1 tonight, with the ITV TV Guide as the top result"></div>
+        <span class="label credit">ITV · Discovery</span>
+        <h3>Three Million Searches, One TV Guide</h3>
+        <p>Found that around three million ITVX users searched without finding what they wanted, and turned that insight into a roadmap that led to the new ITVX TV guide.</p>
+      </a>
+      <a class="proj" href="#work">
+        <div class="still s4"><div></div><img class="shot cover" src="images/arqplex.webp" alt="Globe of streaming video feeds and data"></div>
+        <span class="label credit">Arqiva · 2025–2026 · Infrastructure</span>
+        <h3>Arqplex goes multi-cloud and virtualised on-prem</h3>
+        <p>Led the launch of Headend-in-a-box and virtualised the on-premise headends.</p>
+      </a>
+      <a class="proj" href="#work">
+        <div class="still s8"><div></div><img class="shot" src="images/blacknut.webp" alt="Blacknut cloud gaming on TV, laptop, tablet and phone"></div>
+        <span class="label credit">TalkTalk · 2024–2025 · Consumer platform</span>
+        <h3>A new home for content</h3>
+        <p>Brought Amdocs and Blacknut cloud gaming into a new consumer platform, using funnel data to prove ROI.</p>
+      </a>
+      <a class="proj" href="#work">
+        <div class="still s9"><div></div><video class="shot" src="images/bfbs.mp4" poster="images/bfbs-poster.jpg" autoplay muted loop playsinline aria-label="BFBS radio app promo video"></video></div>
+        <span class="label credit">BFBS · 2020–2021 · Apps</span>
+        <h3>A new radio app for the Forces</h3>
+        <p>Rebuilt BFBS's most popular product past its MVP, and brought a new CMS and NPAW analytics to the TV Player used by service families abroad.</p>
+      </a>
+      <a class="proj feature" href="#work">
+        <div class="still s7"><div></div><img class="shot" src="images/hopster.webp" alt="Hopster on TV, tablet and phone"></div>
+        <span class="label credit">Hopster · 2018–2020 · Kids VOD</span>
+        <h3>Hopster breaks into the US</h3>
+        <p>Launched Hopster's children's VOD service across the US on Comcast, Roku and Dish, growing it from an app into an international content platform ahead of its acquisition by Sandbox.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="experience">
+  <div class="inner">
+    <div class="sec-head"><h2 class="display">Experience</h2><span class="label">Credits</span></div>
+    <ul class="cv">
+      <li><span class="years">2025 – 2026</span><h3>Senior Product Manager, Arqplex<small>Arqiva</small></h3><p>Owned real-time broadcast delivery infrastructure and third-party network vendors, and led the move to multi-cloud.</p></li>
+      <li><span class="years">2024 – 2025</span><h3>Product Manager, Content<small>TalkTalk</small></h3><p>Owned platform delivery and partner integrations for a new consumer platform.</p></li>
+      <li><span class="years">2022 – 2024</span><h3>Product Manager, New Value Propositions<small>ITV</small></h3><p>Ran CDN and ad-insertion partnerships across ITVX and launched the UK's first public service FAST channels.</p></li>
+      <li><span class="years">2021 – 2022</span><h3>Product Manager, Metadata<small>NOW (Sky)</small></h3><p>Owned the content-data platform for NOW, WOW and Sky Group, and the Visits Without Play metric.</p></li>
+      <li><span class="years">2020 – 2021</span><h3>Product Manager<small>BFBS</small></h3><p>Fixed-term product role at British Forces Broadcasting Service.</p></li>
+      <li><span class="years">2018 – 2020</span><h3>Product Owner / Project Manager<small>Hopster (now Sandbox Kids)</small></h3><p>Children's streaming app.</p></li>
+      <li><span class="years">2004 – 2018</span><h3>Programming and operations<small>NBCUniversal · ESPN · Discovery Networks Europe · Aldata Solutions</small></h3><p>Programme manager, commercial operations and programme planning across international channels, after a product marketing placement in Paris.</p></li>
+      <li><span class="years">Education</span><h3>Training<small>General Assembly · London MET Film School · Bournemouth University</small></h3><p>Product Management certification, Directing and Filmmaking diploma, BA (Hons) International Marketing Management and French.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap mist" id="notebook">
+  <div class="inner">
+    <div class="sec-head"><h2 class="display">Notebook</h2><span class="label">Blog · post ideas</span></div>
+    <div class="notebook">
+      <a class="lead" href="#notebook">
+        <div class="still s6"></div>
+        <span class="label" style="color:var(--grey)">Essay · draft idea</span>
+        <h3>What three million failed searches taught me about discovery</h3>
+      </a>
+      <ul class="posts">
+        <li><a href="#notebook"><div class="still s2"><img class="shot cover" src="images/itvx-kids.webp" alt="ITVX Kids 24/7 channel tile"></div><div><span class="label" style="color:var(--grey)">Case study · draft idea</span><h4>Launching FAST channels at a public broadcaster</h4><p>From first pitch to a million monthly viewers.</p></div></a></li>
+        <li><a href="#notebook"><div class="still s3"><img class="shot cover" src="images/gracenote.webp" alt=""></div><div><span class="label" style="color:var(--grey)">Notes · draft idea</span><h4>Metadata is the product</h4><p>Why the data behind the catalogue decides what people watch.</p></div></a></li>
+        <li><a href="#notebook"><div class="still s4"></div><div><span class="label" style="color:var(--grey)">Notes · draft idea</span><h4>From film school to product management</h4><p>What directing taught me about building streaming products.</p></div></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="wrap dark-band contact" id="contact">
+  <div class="inner">
+    <span class="label">Contact</span>
+    <h2 class="display">Let's<br>talk</h2>
+    <div class="contact-row">
+      <div class="emails">
+        <div><div class="email" id="email-1">diegorochoa@outlook.com</div><button class="copy" data-target="email-1" type="button">Copy email</button></div>
+        <div><div class="email" id="email-2">diegorochoa@googlemail.com</div><button class="copy" data-target="email-2" type="button">Copy email</button></div>
+      </div>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/diegorochoa">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<footer class="wrap dark-band">
+  <div class="inner"><span>© 2026 Diego Ochoa</span><span class="label">London</span></div>
+</footer>
+
+<script>
+if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) { document.querySelectorAll('video[autoplay]').forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); }); }
+document.querySelectorAll('.copy').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var el = document.getElementById(btn.dataset.target), text = el.textContent;
+    function done(msg) { btn.textContent = msg; setTimeout(function () { btn.textContent = 'Copy email'; }, 1800); }
+    function selectIt() { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected, press Ctrl+C'); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done('Copied'); }, selectIt);
+    } else { selectIt(); }
+  });
+});
+</script>
+
+</body>
+</html>
